@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( RobotTracker )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( RobotTracker RobotTracker.cpp )
+target_link_libraries( RobotTracker ${OpenCV_LIBS} )
